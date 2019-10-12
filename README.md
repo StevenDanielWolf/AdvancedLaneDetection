@@ -72,12 +72,13 @@ I start by preparing "object points", which will be the (x, y, z) coordinates of
 
 I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result:
 
-![Chessboard Image][image2]
-![Chessboard Image Undistorted][image3]
-![Chessboard Image Undistorted and Warped][image4]
+
+Original Image               |  Undistorted Image                       | Undistorted and Warped Image                       |
+:---------------------------:|:-------------------------------------:  :|: -------------------------------------------------:|
+![Chessboard Image][image2]  |  ![Chessboard Image Undistorted][image3] | ![Chessboard Image Undistorted and Warped][image4] |
 
 
-###Image Processing pipeline
+### Image Processing pipeline
 
 Distortion Correction
 ---
@@ -86,8 +87,12 @@ Utilizing the camera matrix mtx and distortion coefficients dist from the camera
 
 To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like this one:
 
-![Road Image][image1]
-![Road Image Undistorted][image5]
+
+
+Road Image               |  Undistorted Road Image               |
+:-----------------------:|:-------------------------------------:|
+![Road Image][image1]    |  ![Road Image Undistorted][image5]    |
+
 
 Color and Gradient Thresholding
 ---
@@ -98,13 +103,24 @@ I can tehn use these binaries to create a combined binary and stacked color bina
 
 Here's an example of my output for this step.  
 
-![R Channel][image7]
-![S Channel][image8]
-![R Binary][image9]
-![S Binary][image10]
-![Sx Binary][image11]
-![Colored Binary][image12]
-![Combined Binary][image13]
+
+R Channel               |  S Channel               |
+:----------------------:|:------------------------:|
+![R Channel][image7]    |  ![S Channel][image8]    |
+
+
+
+
+R Binary               |  S Binary              | Sx Binary (Gradient in x direction)   |
+:---------------------:|:----------------------:|: ------------------------------------:|
+![R Binary][image9]    | ![S Binary][image10]   | ![Sx Binary][image11]                 |
+
+
+
+Colored Binary                |  Combined Binary               |
+:------------------ ---------:|:------------------------------:|
+![Colored Binary][image12]    | ![Combined Binary][image13]    |
+
 
 Perspective Transformation
 ---
