@@ -74,7 +74,7 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 
 
 Original Image               |  Undistorted Image                       | Undistorted and Warped Image                       |
-:---------------------------:|:----------------------------------------:|: -------------------------------------------------:|
+:---------------------------:|:----------------------------------------:|:--------------------------------------------------:|
 ![Chessboard Image][image2]  |  ![Chessboard Image Undistorted][image3] | ![Chessboard Image Undistorted and Warped][image4] |
 
 
