@@ -74,7 +74,7 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 
 
 Original Image               |  Undistorted Image                       | Undistorted and Warped Image                       |
-:---------------------------:|:-------------------------------------:  :|: -------------------------------------------------:|
+:---------------------------:|:----------------------------------------:|: -------------------------------------------------:|
 ![Chessboard Image][image2]  |  ![Chessboard Image Undistorted][image3] | ![Chessboard Image Undistorted and Warped][image4] |
 
 
@@ -112,13 +112,13 @@ R Channel               |  S Channel               |
 
 
 R Binary               |  S Binary              | Sx Binary (Gradient in x direction)   |
-:---------------------:|:----------------------:|: ------------------------------------:|
+:---------------------:|:----------------------:|:-------------------------------------:|
 ![R Binary][image9]    | ![S Binary][image10]   | ![Sx Binary][image11]                 |
 
 
 
 Colored Binary                |  Combined Binary               |
-:------------------ ---------:|:------------------------------:|
+:----------------------------:|:------------------------------:|
 ![Colored Binary][image12]    | ![Combined Binary][image13]    |
 
 
